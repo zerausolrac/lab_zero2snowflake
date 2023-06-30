@@ -130,7 +130,7 @@ SELECT
     m.truck_brand_name,
     m.menu_item_id,
     m.menu_item_name
-FROM frostbyte_tasty_bytes.raw_pos.menu m
+FROM latam_frostbyte_tasty_bytes.raw_pos.menu m
 WHERE truck_brand_name = 'Cheeky Greek';
 
 
@@ -146,8 +146,8 @@ SELECT
     CONCAT(clm.first_name, ' ', clm.last_name) AS name,
     COUNT(DISTINCT o.order_id) AS order_count,
     SUM(o.price) AS total_sales
-FROM frostbyte_tasty_bytes.analytics.orders_v o
-JOIN frostbyte_tasty_bytes.analytics.customer_loyalty_metrics_v clm
+FROM latam_frostbyte_tasty_bytes.analytics.orders_v o
+JOIN latam_frostbyte_tasty_bytes.analytics.customer_loyalty_metrics_v clm
     ON o.customer_id = clm.customer_id
 GROUP BY o.customer_id, name
 ORDER BY order_count DESC;
