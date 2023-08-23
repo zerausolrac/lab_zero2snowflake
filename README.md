@@ -25,7 +25,7 @@ Opción 1 - cargar desde opicón "Create Worksheet From SQL File", se abrira  un
 ![rol accountadmin](imgs/op2.png)
 Opció 2 - cargar desde opción "Create a SQL Worksheet", se puede abrir el archivo SQL en un navegador, copiar y pegar el código dentro de la nueva Worksheet recien creado.
 ![rol accountadmin](imgs/op1.png)
-## Paso 3: Ejecutar todo el código SQL
+## Paso 3: Abirir 0_LATAM_TastyBytes_Configuracion.sql y Ejecutar todo el código SQL
 Selecionar todo el código SQL y ejecutar todo en un solo paso.
 ![rol accountadmin](imgs/op3.png)
 
